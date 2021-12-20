@@ -1,0 +1,30 @@
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+>
+<head></head>
+<body>
+<div th:fragment="footer">
+    <!--      <div class="container">-->
+    <!-- Footer -->
+    <footer class="bg-primary text-center text-lg-start">
+        <div class="text-center text-black p-2">
+            <b>
+                © 2021 Copyright:
+                <a class="text-black" th:href="@{/login}">TechPassel.com</a>
+            </b>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Our Custom JS -->
+    <script src="/js/main.js"></script>
+    <!--JS files for Bootstrap - jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery/jquery.slim.min.js"></script>
+    <script src="/js/popperjs/popper.min.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js	"></script>
+</div>
+</body>
+</html>

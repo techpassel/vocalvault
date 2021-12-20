@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+>
+<head>
+    <div th:replace="fragments/layouts/header :: head(pageTitle='Home')"></div>
+</head>
+<body>
+<div th:replace="fragments/layouts/header :: header"/>
+
+<div class="main">
+    <div class="container">
+        <div class="starter-template">
+            <!--<div th:if="${param.signup}">
+                <div class="alert alert-info">User created successfully.</div>
+            </div>-->
+            <div class="home-title text-center text-fav">VocabVault</div>
+            <div class="note note-warning font-weight-bold">
+                <h3 class="text-fav ml-3 bolder">Why you should join VocabVault?</h3>
+                <ul>
+                    <li>Save your own collection of vocabulary online and access them anytime from anywhere.</li>
+                    <li>Sort your vocabulary as you want viz. day-wise, week-wise, month-wise, year-wise or in alphabetical
+                        order.
+                    </li>
+                    <li>Take weekly and monthly test from your own collection of words and track your growth and
+                        performance through scorecards, charts and graphs.
+                    </li>
+                    <li>Get list of top 10 trending words daily.</li>
+                    <li>Participate in global vocabulary competition, quizzes and analyze your position.</li>
+                </ul>
+            </div>
+            <div class="text-center mt-3">
+                <h2>
+                    <a th:href="@{/signup}">
+                        <button class="btn btn-lg btn-danger btn-home font-weight-bold">Start exploring</button>
+                    </a>
+                </h2>
+                <h2 class="mt-2">Or, Already a member?</h2>
+                <h2 class="mt-2">
+                    <a th:href="@{/login}">
+                        <button class="btn btn-lg btn-success btn-home font-weight-bold">Sign in</button>
+                    </a>
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="fragments/layouts/footer :: footer"/>
+</body>
+</html>

@@ -1,0 +1,99 @@
+.main {
+    padding: 3.125rem 0rem;
+    background-image: url("/public/vocabvault.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+}
+
+.form-content {
+    margin-top: 35px;
+}
+
+.form-template {
+    border: 20px solid #2237f5;
+    border-radius: 30px;
+    padding: 20px !important;
+    background-color: rgba(34,55,245,0.3);
+    min-height: 470px;
+    position: relative;
+}
+
+.form-inner-template {
+    position: absolute;
+    top: 50%;
+    width: inherit;
+    padding-right: 2.5rem;
+    transform: translateY(-50%);
+}
+
+.form-field {
+    margin: 20px;
+}
+
+.js-test-file {
+    background-color: #f21885;
+    text-align: center;
+}
+
+.link-disabled {
+    color: #2237f5;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.link-disabled-wrapper {
+    cursor: not-allowed;
+}
+
+.note-warning {
+    background-color: rgba(232, 122, 114, 0.8);
+    border-color: #ffbb00 !important;
+}
+
+.note {
+    padding: 25px 30px;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.home-title{
+    margin: 15px 0px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.bolder{
+    font-weight: 900 !important;
+}
+
+.header-logo {
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    font-size: 1.5rem !important;
+    font-weight: 800 !important;
+}
+
+.centered-text{
+    text-align: center;
+}
+
+.btn-home {
+    border-radius: 25px !important;
+}
+
+@media (max-width: 768px) {
+    .form-template {
+        flex: none !important;
+        max-width: none !important;
+    }
+}
